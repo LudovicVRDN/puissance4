@@ -2,11 +2,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme{
-  --font-pixel: "Pixelify Sans", sans-serif;
+  --font-pixel: "Pixelify Sans", sans-serif ;
 
 }
-
-
 
 .joueur1 {
     background-color: red;
@@ -24,9 +22,29 @@
     transition: transform 0.5s ease, opacity 0.5s ease, border 0.7s ease, box-shadow 0.7s ease;
 
 }
-
 .enter {
     opacity: 0;
     transform: translateY(-30px);
 
+}
+/* opening transition */
+#mainScreen {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+#mainScreen.fade-in {
+    display: flex !important;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.fade-out {
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none; 
 }

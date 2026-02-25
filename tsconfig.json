@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
-    /* Language & Environment */
-    "target": "ES2022",
+    /* Langue & environnement */
+    "target": "ES6",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "moduleDetection": "force",
+    "module": "ES6",               
 
-    /* Strict Type Checking */
+    /* Vérification stricte */
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
@@ -17,12 +15,11 @@
     "noFallthroughCasesInSwitch": true,
     "noPropertyAccessFromIndexSignature": true,
 
-    /* Emit */
+    /* Sortie */
     "outDir": "./dist",
     "rootDir": "./src",
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
+    "declaration": false,
+    "sourceMap": false,
     "removeComments": false,
 
     /* Interop */

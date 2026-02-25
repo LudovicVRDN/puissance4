@@ -16,21 +16,21 @@
     <h1 class=" text-3xl md:text-5xl m-10 ">Puissance 4</h1>
     </header>
     <main>
-        <article class="w-70 md:w-100 h-auto text-2xl border-2 dark:border-white p-5 m-auto bg-blue-800 shadow-2xl shadow-blue-500 hidden">
-            <fieldset >
+        <article id="firstWindow" class="w-70 md:w-100 h-auto text-2xl border-2 dark:border-white p-5 m-auto bg-blue-800 shadow-2xl shadow-blue-500 ">
+            <fieldset  >
             <legend >Contre qui veux tu jouer ?</legend>
             <div>
-            <input type="radio" id="ami" name="choixjoueur"  value="ami"><label for="ami">Un ami</label>
+            <input type="radio" id="ami" name="playerChoice"  value="ami"><label for="ami">Un ami</label>
             </div>
             <div>
-            <input type="radio" id="ordi" name="choixjoueur" value="ordinateur"><label for="ordi">Un ordinateur</label>
+            <input type="radio" id="ordi" name="playerChoice" value="ordinateur"><label for="ordi">Un ordinateur</label>
             </div>
-            <button class="bg-gray-200 w-20 h-8 text-black m-5 text-xl">Ok</button>
+            <button id="validate" class="bg-gray-200 w-20 h-8 text-black m-5 text-xl">Ok</button>
             <img src="/media/manette.png" alt="Icone manette" class="ml-auto w-10 h-10">      
             </fieldset>
 
         </article>
-    <section class="flex flex-col lg:flex-row">
+    <section id="mainScreen" class="hidden flex-col lg:flex-row">
         <section class=" rounded-xl border-2 border-black dark:border-white w-85 h-85 md:w-195 md:h-160 lg:w-250 lg:h-175 m-auto flex bg-blue-800 shadow-2xl  shadow-blue-500 p-2">
             <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"> <!-- Colonne  1-->
 
@@ -130,12 +130,12 @@
             <h2 class="text-2xl ">Résultats</h2>
             <section class="flex gap-25 md:block">
             <div class="ml-5 md:ml-0">
-            <h3>Joueur 1</h3>
+            <h3 class="player1">Joueur 1</h3>
             <p class='victoire '>Victoires : 0</p>
             <p class='defaite  dark:border-white p-1'>Défaites : 0</p>
             </div>
             <div class="mr-5 md:mr-0">
-            <h3>Joueur 2</h3>
+            <h3 class='player2'>Joueur 2</h3>
             <p class='victoire_joueur2 '>Victoires : 0</p>
             <p class='defaite_joueur2 p-1'>Défaites : 0</p>
             </div>
