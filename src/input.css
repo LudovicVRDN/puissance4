@@ -1,1 +1,29 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme{
+  --font-pixel: "Pixelify Sans", sans-serif;
+}
+
+
+.joueur1 {
+    background-color: red;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease, border 0.7s ease, box-shadow 0.7s ease;
+
+
+}
+
+.joueur2 {
+    background-color: yellow;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease, border 0.7s ease, box-shadow 0.7s ease;
+
+}
+
+.enter {
+    opacity: 0;
+    transform: translateY(-30px);
+
+}
