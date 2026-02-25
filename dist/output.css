@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(2, 2, 49);
+}
+/*Section need a flex */
+section {
+    display: flex;
+}
+/* Create plateau design*/
+.plateau {
+    background-color: blue;
+    width: 50vw;
+    height: 90vh;
+    padding: 4px;
+    margin: auto;
+    box-shadow: 0 0 0.6em rgb(161, 160, 160);
+}
+/*h1 design */
+h1 {
+    margin: auto;
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 0 0.2em rgb(161, 160, 160);
+    border-radius: 10px;
+    width: 30%;
+    padding: 5px;
+}
+/*all articles design*/
+article {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    height: 100%;
+    width: 70%;
+
+}
+/*All "jetons" design*/
+.jetons {
+    margin-top: 4px;
+    border-radius: 50%;
+    height: 15%;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    box-shadow: 0 0 0.5em rgb(255, 255, 255);
+
+}
+/* Score side design*/
+.score {
+    margin: auto;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    box-shadow: 0 0 0.2em rgb(161, 160, 160);
+    border-radius: 10px;
+    width: 30%;
+
+}
+/*h2 Design*/       
+h2 {
+    padding: 5px;
+}
+/*Joueur1 "jetons" color */
+.joueur1 {
+    background-color: red;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease, border 0.7s ease, box-shadow 0.7s ease;
+}
+/*Joueur2 "jetons" color */
+.joueur2 {
+    background-color: yellow;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease, border 0.7s ease, box-shadow 0.7s ease;
+}
+/* Transition for "jetons" when player click*/
+.enter {
+    opacity: 0;
+    transform: translateY(-30px);
+
+}
+
+.font_size {
+    font-size: small;
+}

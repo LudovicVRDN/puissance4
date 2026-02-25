@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/LudovicVRDN/puissance4/issues"
   },
-  "homepage": "https://github.com/LudovicVRDN/puissance4#readme"
+  "homepage": "https://github.com/LudovicVRDN/puissance4#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
 }
