@@ -16,30 +16,32 @@
     <h1 class=" text-3xl md:text-5xl m-10 ">Puissance 4</h1>
     </header>
     <main>
-        <article id="firstWindow" class="w-70 md:w-100 h-auto text-2xl border-2 dark:border-white p-5 m-auto bg-blue-800 shadow-2xl shadow-blue-500 ">
-            <fieldset  >
+        <section id="firstWindow" class=" w-70 md:w-100 h-auto text-2xl border-2 dark:border-white p-5 m-auto bg-blue-800 shadow-2xl shadow-blue-500 ">
+            <form >
+            <fieldset>
             <legend >Contre qui veux tu jouer ?</legend>
             <div>
-            <input type="radio" id="ami" name="playerChoice"  value="ami"><label for="ami">Un ami</label>
+            <label for="ami"><input type="radio" id="ami" name="playerChoice"  value="friend" >Un ami</label>
             </div>
             <div>
-            <input type="radio" id="ordi" name="playerChoice" value="ordinateur"><label for="ordi">Un ordinateur</label>
+            <label for="ordi"> <input type="radio" id="ordi" name="playerChoice" value="computer" >Un ordinateur</label>
             </div>
-            <button id="validate" class="bg-gray-200 w-20 h-8 text-black m-5 text-xl">Ok</button>
+            <button  id="validate" class="bg-gray-200 w-20 h-8 text-black m-5 text-xl">Ok</button>
             <img src="/media/manette.png" alt="Icone manette" class="ml-auto w-10 h-10">      
             </fieldset>
+            </form>
 
-        </article>
+        </section>
     <section id="mainScreen" class="hidden flex-col lg:flex-row">
-        <section class=" rounded-xl border-2 border-black dark:border-white w-85 h-85 md:w-195 md:h-160 lg:w-250 lg:h-175 m-auto flex bg-blue-800 shadow-2xl  shadow-blue-500 p-2">
+        <section class=" rounded-2xl border-2 border-black dark:border-white w-85 h-85 md:w-195 md:h-160 lg:w-250 lg:h-175 m-auto flex bg-blue-800 shadow-2xl  shadow-blue-500 p-2 plateau">
             <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"> <!-- Colonne  1-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -47,12 +49,12 @@
 
             <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"> <!-- Colonne  2-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -60,12 +62,12 @@
 
              <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"> <!-- Colonne  3-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -73,12 +75,12 @@
 
             <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"><!-- Colonne  4-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -86,12 +88,12 @@
 
              <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"> <!-- Colonne  5-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -99,12 +101,12 @@
 
             <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"><!-- Colonne  6-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -112,12 +114,12 @@
 
              <article class="mt-0.5 flex flex-col justify-start gap-1.5 h-full w-[70%]"> <!-- Colonne  7-->
 
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 1-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 2-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 3-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 4-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 5-->
-                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500"></div> <!-- Case 6-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 1-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 2-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 3-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 4-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 5-->
+                <div class="m-auto rounded-[50%] h-[15%] w-[80%] bg-blue-100 dark:bg-slate-900 border-2 dark:border-white shadow-2xl shadow-gray-500 jetons"></div> <!-- Case 6-->
 
 
 
@@ -130,18 +132,30 @@
             <h2 class="text-2xl ">Résultats</h2>
             <section class="flex gap-25 md:block">
             <div class="ml-5 md:ml-0">
-            <h3 class="player1">Joueur 1</h3>
+            <h3 class="playerTitle1">Joueur 1</h3>
             <p class='victoire '>Victoires : 0</p>
             <p class='defaite  dark:border-white p-1'>Défaites : 0</p>
             </div>
             <div class="mr-5 md:mr-0">
-            <h3 class='player2'>Joueur 2</h3>
-            <p class='victoire_joueur2 '>Victoires : 0</p>
-            <p class='defaite_joueur2 p-1'>Défaites : 0</p>
+            <h3 class='playerTitle2'>Joueur 2</h3>
+            <p class='victoire_player2 '>Victoires : 0</p>
+            <p class='defaite_player2 p-1'>Défaites : 0</p>
             </div>
             </section>
         </div>
     </section>
+    
+    <section class="w-70 md:w-100 h-75 text-2xl border-2 dark:border-white p-5 m-auto  bg-blue-800 shadow-2xl shadow-blue-500 fixed z-5 top-0 right-0 bottom-0 left-0 hidden" id="again">
+        <h2 class="playAgainTitle">On rejoue ?</h2>
+            <div>
+            <label for="oui"><input type="radio" id="oui" name="playAgain"  value="oui">Oui</label>
+            </div>
+            <div>
+            <label for="non"><input type="radio" id="non" name="playAgain" value="non">Non</label>
+            </div>
+            <button id="validatePlayAgain" class="bg-gray-200 w-20 h-8 text-black m-5 text-xl">Ok</button>
+    </section>
+    
     </main>
 
 </body>

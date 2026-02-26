@@ -6,7 +6,7 @@
 
 }
 
-.joueur1 {
+.player1 {
     background-color: red;
     opacity: 1;
     transform: translateY(0);
@@ -15,7 +15,7 @@
 
 }
 
-.joueur2 {
+.player2 {
     background-color: yellow;
     opacity: 1;
     transform: translateY(0);
@@ -47,4 +47,8 @@
     transform: scale(1.1);
     transition: opacity 0.4s ease, transform 0.4s ease;
     pointer-events: none; 
+}
+article:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
